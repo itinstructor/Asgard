@@ -179,7 +179,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             else:
                 typeOfMovement = "G0 "
                 feedRate = ""
-            message = typeOfMovement + "A" + str(self.SpinBoxArt1.value()) + feedRate
+            message = typeOfMovement + "A" + \
+                str(self.SpinBoxArt1.value()) + feedRate
             messageToSend = message + "\n"
             messageToConsole = ">>> " + message
             s0.write(messageToSend.encode("UTF-8"))
@@ -284,7 +285,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             else:
                 typeOfMovement = "G0 "
                 feedRate = ""
-            message = typeOfMovement + "D" + str(self.SpinBoxArt3.value()) + feedRate
+            message = typeOfMovement + "D" + \
+                str(self.SpinBoxArt3.value()) + feedRate
             messageToSend = message + "\n"
             messageToConsole = ">>> " + message
             s0.write(messageToSend.encode("UTF-8"))
@@ -333,7 +335,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             else:
                 typeOfMovement = "G0 "
                 feedRate = ""
-            message = typeOfMovement + "X" + str(self.SpinBoxArt4.value()) + feedRate
+            message = typeOfMovement + "X" + \
+                str(self.SpinBoxArt4.value()) + feedRate
             messageToSend = message + "\n"
             messageToConsole = ">>> " + message
             s0.write(messageToSend.encode("UTF-8"))
@@ -383,7 +386,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             else:
                 typeOfMovement = "G0 "
                 feedRate = ""
-            message = typeOfMovement + "Y" + str(self.SpinBoxArt5.value()) + feedRate
+            message = typeOfMovement + "Y" + \
+                str(self.SpinBoxArt5.value()) + feedRate
             messageToSend = message + "\n"
             messageToConsole = ">>> " + message
             s0.write(messageToSend.encode("UTF-8"))
@@ -433,7 +437,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             else:
                 typeOfMovement = "G0 "
                 feedRate = ""
-            message = typeOfMovement + "Z" + str(self.SpinBoxArt6.value()) + feedRate
+            message = typeOfMovement + "Z" + \
+                str(self.SpinBoxArt6.value()) + feedRate
             messageToSend = message + "\n"
             messageToConsole = ">>> " + message
             s0.write(messageToSend.encode("UTF-8"))
@@ -571,7 +576,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             self.blankSerialPort()
 
     def serialDisconnected(self):
-        self.RobotStateDisplay.setStyleSheet("background-color: rgb(255, 0, 0)")
+        self.RobotStateDisplay.setStyleSheet(
+            "background-color: rgb(255, 0, 0)")
         self.RobotStateDisplay.setText("Disconnected")
 
     def updateConsole(self, dataRead):
@@ -619,15 +625,20 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
     def updateCurrentState(self, state):
         self.RobotStateDisplay.setText(state)
         if state == "Idle" or state == "Run":
-            self.RobotStateDisplay.setStyleSheet("background-color: rgb(0, 255, 0)")
+            self.RobotStateDisplay.setStyleSheet(
+                "background-color: rgb(0, 255, 0)")
         elif state == "Home":
-            self.RobotStateDisplay.setStyleSheet("background-color: rgb(85, 255, 255)")
+            self.RobotStateDisplay.setStyleSheet(
+                "background-color: rgb(85, 255, 255)")
         elif state == "Alarm":
-            self.RobotStateDisplay.setStyleSheet("background-color: rgb(255, 255, 0)")
+            self.RobotStateDisplay.setStyleSheet(
+                "background-color: rgb(255, 255, 0)")
         elif state == "Hold":
-            self.RobotStateDisplay.setStyleSheet("background-color: rgb(255, 0, 0)")
+            self.RobotStateDisplay.setStyleSheet(
+                "background-color: rgb(255, 0, 0)")
         else:
-            self.RobotStateDisplay.setStyleSheet("background-color: rgb(255, 255, 255)")
+            self.RobotStateDisplay.setStyleSheet(
+                "background-color: rgb(255, 255, 255)")
 
     def blankSerialPort(self):
         msgBox = QtWidgets.QMessageBox()
@@ -699,7 +710,8 @@ class AsgardGUI(QMainWindow, Ui_MainWindow):
             # Check if the 'Settings' section exists in the configuration
             if "Settings" in config:
                 # Get the 'gripperRange' value from the 'Settings' section
-                gripperUpperRange = config["Settings"].get("gripperUpperRange", "0")
+                gripperUpperRange = config["Settings"].get(
+                    "gripperUpperRange", "0")
 
                 # Convert the obtained value to an integer
                 # and assign it to the gripperUpperRange variable
