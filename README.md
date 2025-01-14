@@ -1,6 +1,6 @@
 # Asgard
 
-Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM/Thor) designed and programmed with [PyQt5](https://riverbankcomputing.com/software/pyqt/download5).
+Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM/Thor) designed and programmed with [PySide6](https://pypi.org/project/PySide6/).
 
 * Key features:
   *  User-friendly Graphical Interface
@@ -11,9 +11,14 @@ Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM
   * 3D display
   * 3D IK Controller/Sequence Programmer
 
+## Changes
+
+* 12/23/2024: Convert from PyQt5 to PySide6. Add Gripper Upper range setting to Preferences dialog.
+
 <img src="doc/AsgardGUI.png" width="800">
 
 ## Tools and useful links
+
 * **QtDesigner** - Used to design the graphical part of gui
 * **Python 3.4** - Used to program and execute Asgard
 + **[SKYLOGIC PROJECTS Tutorial](http://projects.skylogic.ca/blog/how-to-install-pyqt5-and-build-your-first-gui-in-python-3-4/)** - How to Install PyQt5 and Build Your First GUI in Python 3.4
@@ -24,8 +29,6 @@ Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM
 * **[Harrison Kinsley](https://twitter.com/Sentdex)** ([sentdex](https://www.youtube.com/user/sentdex) from [pythonprogramming.net](https://pythonprogramming.net)): I learned from you almost everything I know about python. Thanks for that detailed tutorials & examples!
 * **[Matthew Dirks](https://github.com/skylogic004)** from [SkyLogic](http://projects.skylogic.ca): Thank you for [this detailed tutorial](http://projects.skylogic.ca/blog/how-to-install-pyqt5-and-build-your-first-gui-in-python-3-4/)! It was incredible easy to make my first GUI in less than an hour following your steps!
 * **[Thor Community](https://groups.google.com/forum/#!forum/thor-opensource-3d-printable-robotic-arm)**: For all the support and feedback given! YOU ROCK GUYS!
-
-
 
 Do not hesitate on contributing to this project!
 
