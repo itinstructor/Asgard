@@ -2,6 +2,8 @@
 
 Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM/Thor) designed and programmed with [PySide6](https://pypi.org/project/PySide6/).
 
+This repository was cloned from [Asgard by AngelLM](https://github.com/AngelLM/Asgard), the original author.
+
 * Key features:
   *  User-friendly Graphical Interface
   *  Forward Kinematics implementation (1st version)
@@ -17,11 +19,6 @@ Asgard is a Graphical User Interface (GUI) for [Thor](https://github.com/AngelLM
 
 <img src="doc/AsgardGUI.png" width="800">
 
-## Tools and useful links
-
-* **QtDesigner** - Used to design the graphical part of gui
-* **Python 3.4** - Used to program and execute Asgard
-+ **[SKYLOGIC PROJECTS Tutorial](http://projects.skylogic.ca/blog/how-to-install-pyqt5-and-build-your-first-gui-in-python-3-4/)** - How to Install PyQt5 and Build Your First GUI in Python 3.4
 
 ## Thanks!
 
