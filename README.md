@@ -27,8 +27,6 @@ This repository was cloned from [Asgard by AngelLM](https://github.com/AngelLM/A
 * **[Matthew Dirks](https://github.com/skylogic004)** from [SkyLogic](http://projects.skylogic.ca): Thank you for [this detailed tutorial](http://projects.skylogic.ca/blog/how-to-install-pyqt5-and-build-your-first-gui-in-python-3-4/)! It was incredible easy to make my first GUI in less than an hour following your steps!
 * **[Thor Community](https://groups.google.com/forum/#!forum/thor-opensource-3d-printable-robotic-arm)**: For all the support and feedback given! YOU ROCK GUYS!
 
-Do not hesitate on contributing to this project!
-
 ## License <img src="doc/By-sa.png" width="100">
 
 All files included in this repository are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
